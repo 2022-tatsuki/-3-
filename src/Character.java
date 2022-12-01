@@ -4,46 +4,27 @@ public class Character {
     private final String name;
     private final int age;
     private final String rank;
-    private final String battlestyle;
-    private final String trigerlevel;
+    private final String BattleStyle;
+    private final String TriggerLevel;
 
     //コンストラクター
-    public Character(String name, int age, String rank, String battlestile, String trigerlevel) {
+    public Character(String name, int age, String rank, String BattleStyle, String TriggerLevel) {
         this.name = name;
         this.age = age;
         this.rank = rank;
-        this.battlestyle = battlestile;
-        this.trigerlevel = trigerlevel;
+        this.BattleStyle = BattleStyle;
+        this.TriggerLevel = TriggerLevel;
+
     }
 
-    //ゲッター：値を入手し、Mainへ返す。
-    public String getName() {
-        return this.name;
-    }
-
-    public int getAge() {
-        return this.age;
-    }
-
-    public String getRank() {
-        return this.rank;
-    }
-
-    public String getBattlestile() {
-        return this.battlestyle;
-    }
-
-    public String getTrigerlevel() {
-        return this.trigerlevel;
-    }
 
     //名前のみ表示
-    public void dispName() {
-        System.out.println(getName());
+    public void dspName() {
+        System.out.println(name);
     }
 
     //全表示
-    public void dispCharacterDirectory() {
-        System.out.println("名前：" + getName() + " " + "年齢" + getAge() + "歳 " + "ランク" + getRank() + " " + "使用武器 " + getBattlestile() + " " + getTrigerlevel());
+    public void dspCharacterDirectory() {
+        System.out.println("名前：" + name + " " + "年齢" + age + "歳 " + "ランク" + rank + " " + "使用武器 " + BattleStyle + " " + TriggerLevel);
     }
 }
