@@ -4,16 +4,16 @@ public class Character {
     private final String name;
     private final int age;
     private final String rank;
-    private final String BattleStyle;
-    private final String TriggerLevel;
+    private final String battleStyle;
+    private final String triggerLevel;
 
     //コンストラクター
-    public Character(String name, int age, String rank, String BattleStyle, String TriggerLevel) {
+    public Character(String name, int age, String rank, String battleStyle, String triggerLevel) {
         this.name = name;
         this.age = age;
         this.rank = rank;
-        this.BattleStyle = BattleStyle;
-        this.TriggerLevel = TriggerLevel;
+        this.BattleStyle = battleStyle;
+        this.TriggerLevel = triggerLevel;
 
     }
 
@@ -25,6 +25,6 @@ public class Character {
 
     //全表示
     public void dspCharacterDirectory() {
-        System.out.println("名前：" + name + " " + "年齢" + age + "歳 " + "ランク" + rank + " " + "使用武器 " + BattleStyle + " " + TriggerLevel);
+        System.out.println("名前：" + name + " " + "年齢" + age + "歳 " + "ランク" + rank + " " + "使用武器 " + battleStyle + " " + triggerLevel);
     }
 }
