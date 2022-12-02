@@ -12,8 +12,8 @@ public class Character {
         this.name = name;
         this.age = age;
         this.rank = rank;
-        this.BattleStyle = battleStyle;
-        this.TriggerLevel = triggerLevel;
+        this.battleStyle = battleStyle;
+        this.triggerLevel = triggerLevel;
 
     }
 
